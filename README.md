@@ -5,11 +5,11 @@
 ## Match class
 [ ] Incrementar el contador de goles locales en Match. (makeLocalGoal: void -> void)
 
-[-] Incrementar el contador de goles visitante en Match (makeVisitantGoal: void -> void)
+[ ] Incrementar el contador de goles visitante en Match (makeVisitantGoal: void -> void)
 
 [ ] Determinar quien es el equipo ganador, no puede haber empates. (getWinner: void -> Team)
 
-[ ] Mostrar el marcador del partido. (getMatchStatus: void -> String )
+[-] Mostrar el marcador del partido. (getMatchStatus: void -> String )
 
 
 ## Main class
