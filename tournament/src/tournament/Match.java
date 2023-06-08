@@ -60,7 +60,10 @@ public class Match {
 
     public void makeVisitantGoal (){
         visitantGoalCounter++;
+    }
 
+    public void makeLocalGoal(){
+        localGoalCounter++;
     }
 }
 
