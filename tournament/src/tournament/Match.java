@@ -61,4 +61,13 @@ public class Match {
     public void getMatchStatus(){
         System.out.println(getLocalTeam()," ",getLocalGoalCounter()," - ",getVisitantGoalCounter()," ",getVisitantTeam());
     }
+  
+    public void makeVisitantGoal (){
+        visitantGoalCounter++;
+    }
+
+    public void makeLocalGoal(){
+        localGoalCounter++;
+    }
 }
+
