@@ -22,6 +22,6 @@
 
 [-] Hacer un gol de local y dos de visitante
 
-[ ] Mostrar el marcado e indicar quien ganó
+[-] Mostrar el marcado e indicar quien ganó
 
 ![class_diagram.png](class_diagram.png)
