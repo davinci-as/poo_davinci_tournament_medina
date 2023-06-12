@@ -39,17 +39,15 @@ public class Main {
       
         teamB.showMembers();
   
-      System.out.println(tomas.showTeam());
+      //System.out.println(tomas.showTeam());
 
-        Match primerPartido = new Match();
-        primerPartido.setLocalTeam(teamA);
-        primerPartido.setVisitantTeam(teamB);
+        Match primerPartido = new Match(teamA, teamB);
 
         primerPartido.makeLocalGoal(1);
         primerPartido.makeVisitantGoal(2);
         primerPartido.makeVisitantGoal(3);
 
-        primerPartido.getMatchStatus();
+        System.out.println(primerPartido.getMatchStatus());
 
     }
 
