@@ -36,17 +36,17 @@ public class Main {
 
         //Team teamC = new Team("Equipo C", playersC);
 
-        String [] teamClist =  {"Almada", "Dybala", "DePaul", "MacAllister"};
+        String [] teamCList =  {"Almada", "Dybala", "DePaul", "MacAllister"};
         Team teamC = new Team("Equipo C");
-        for (String name : teamClist){
+        for (String name : teamCList){
             teamC.addPlayer(new Player(name));
         }
 
         //Team teamD = new Team("Equipo C", playersC);
 
-        String [] teamDlist =  {"Pepe", "Lucio", "Mario", "Luigi"};
+        String [] teamDList =  {"Pepe", "Lucio", "Mario", "Luigi"};
         Team teamD = new Team("Equipo D");
-        for (String name : teamDlist){
+        for (String name : teamDList){
             teamD.addPlayer(new Player(name));
         }
         
