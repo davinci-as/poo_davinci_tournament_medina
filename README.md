@@ -42,7 +42,7 @@
     - private int visitantGoalCounter;
     - getter y setters
 
-[ ] Actualizar la clase Match
+[-] Actualizar la clase Match
 
     - sacamos localGoalCounter y visitantGoalCounter (sus getters y setter tambien) y dejamos MatchResult result;
 
