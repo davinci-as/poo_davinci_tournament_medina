@@ -33,6 +33,22 @@ public class Main {
         teamB.addPlayer(new Player("Jogher"));
         teamB.addPlayer(new Player("Paco"));
         teamB.addPlayer(new Player("Franco"));
+
+        //Team teamC = new Team("Equipo C", playersC);
+
+        String [] teamClist =  {"Almada", "Dybala", "DePaul", "MacAllister"};
+        Team teamC = new Team("Equipo C");
+        for (String name : teamClist){
+            teamC.addPlayer(new Player(name));
+        }
+
+        //Team teamD = new Team("Equipo C", playersC);
+
+        String [] teamDlist =  {"Pepe", "Lucio", "Mario", "Luigi"};
+        Team teamD = new Team("Equipo D");
+        for (String name : teamDlist){
+            teamD.addPlayer(new Player(name));
+        }
         
         //showMembers
        teamA.showMembers();
