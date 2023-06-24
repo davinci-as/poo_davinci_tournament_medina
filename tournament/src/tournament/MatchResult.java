@@ -1,7 +1,7 @@
 package tournament;
 
 public class MatchResult {
-
+  
     public boolean localWin(){
         if (localGoalCounter>visitantGoalCounter){
             return true;
@@ -26,5 +26,27 @@ public class MatchResult {
         } else {
             return visitantTeam;
         }
+
+    private int localGoalCounter;
+    private int localVisitantCounter;
+
+    public MatchResult() {
+
+    }
+
+    public int getLocalGoalCounter() {
+        return localGoalCounter;
+    }
+
+    public void setLocalGoalCounter(int localGoalCounter) {
+        this.localGoalCounter = localGoalCounter;
+    }
+
+    public int getLocalVisitantCounter() {
+        return localVisitantCounter;
+    }
+
+    public void setLocalVisitantCounter(int localVisitantCounter) {
+        this.localVisitantCounter = localVisitantCounter;
     }
 }
