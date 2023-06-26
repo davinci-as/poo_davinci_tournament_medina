@@ -3,7 +3,7 @@
 # To Do
 
 ## Season class
-[ ] Agregar método addMatch(Match) -> void
+[-] Agregar método addMatch(Match) -> void
 
 
 
