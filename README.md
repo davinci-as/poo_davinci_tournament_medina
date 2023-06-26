@@ -26,13 +26,13 @@
 
 [-] Agregar jugadores a teamA usando iteración
 
-[ ] Agregar jugadores a teamB usando iteración
+[-] Agregar jugadores a teamB usando iteración
 
 [-] Agregar jugares a teamC y teamD
 
 [-] Agregar jugares a teamE y teamF
 
-[ ] Agregar jugares a teamG y teamH
+[-] Agregar jugares a teamG y teamH
 
 ![class_diagram.png](class_diagram.png)
 
