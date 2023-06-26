@@ -21,7 +21,7 @@ public class Main {
         //ArrayList<Player> playersA = new ArrayList<>();
         //playersA.add(teacher);
         //playersA.add(student1);
-        String[] teamlistA = {"Messi", "DiMaria", "Isabel", "Isaac"};
+        /*String[] teamlistA = {"Messi", "DiMaria", "Isabel", "Isaac"};
         Team teamA = new Team("Equipo A");
         for (String name : teamlistA) {
             teamA.addPlayer(new Player(name));
@@ -44,20 +44,32 @@ public class Main {
         for (String name : teamDList){
             teamD.addPlayer(new Player(name));
         }
-      
+
         Team teamE = new Team("Equipo E");
         String [] playersE = {"Ana", "Carlos", "Sofia", "Javier", "Javier","Mariana"};
         for (String player: playersE){
             teamE.addPlayer (new Player(player));
         };
-      
+
         Team teamF = new Team("Equipo F");
         String [] playersF = {"Laura", "Diego", "Valentina", "Alejandro", "Gabriela"};
         for (String player: playersF){
             teamF.addPlayer (new Player(player));
-        }
+        }*/
 
         //TODO: Migrar en Main las implementaciones de la creación de teams, usando el constructor (String, String[])
+
+        Team teamA = new Team("Equipo A", new String[]{"Messi", "DiMaria", "Isabel", "Isaac"});
+
+        Team teamB = new Team("Equipos B", new String[]{"Tomas", "Jogher", "Paco", "Franco"});
+
+        Team teamC = new Team("Equipo C", new String[]{"Almada", "Dybala", "DePaul", "MacAllister"});
+
+        Team teamD = new Team("Equipo D", new String[]{"Pepe", "Lucio", "Mario", "Luigi"});
+
+        Team teamE = new Team("Equipo E", new String[]{"Ana", "Carlos", "Sofia", "Javier", "Javier", "Mariana"});
+
+        Team teamF = new Team("Equipo F", new String[]{"Laura", "Diego", "Valentina", "Alejandro", "Gabriela"});
         
         //TODO: Agregar jugadorres a teamG y teamH, y el partido
 
