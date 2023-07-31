@@ -1,3 +1,4 @@
+import tournament.Llave;
 import tournament.Match;
 import tournament.Player;
 import tournament.Team;
@@ -7,18 +8,23 @@ import java.util.ArrayList;
 public class Main {
     public static void main(String[] args) {
 
-        Team teamA = new Team("Equipo A",{"Messi", "DiMaria", "Isabel", "Isaac"});
+        String [] playersA = {"Messi", "DiMaria", "Isabel", "Isaac"};
+        Team teamA = new Team("Equipo A",playersA);
 
-        Team teamB = new Team("Equipos B",{"Tomas", "Jogher", "Paco", "Franco"} );
+        String [] playersB = {"Tomas", "Jogher", "Paco", "Franco"};
+        Team teamB = new Team("Equipos B",playersB);
 
-        Team teamC = new Team("Equipo C",{"Almada", "Dybala", "DePaul", "MacAllister"});
+        String [] playersC = {"Almada", "Dybala", "DePaul", "MacAllister"};
+        Team teamC = new Team("Equipo C", playersC);
 
-        Team teamD = new Team("Equipo D", {"Pepe", "Lucio", "Mario", "Luigi"});
+        String [] playersD = {"Pepe", "Lucio", "Mario", "Luigi"};
+        Team teamD = new Team("Equipo D", playersD);
 
-        Team teamE = new Team("Equipo E",{"Ana", "Carlos", "Sofia", "Javier", "Javier","Mariana"});
+        String [] playersE = {"Ana", "Carlos", "Sofia", "Javier", "Javier","Mariana"};
+        Team teamE = new Team("Equipo E", playersE);
 
-        Team teamF = new Team("Equipo F",{"Laura", "Diego", "Valentina", "Alejandro", "Gabriela"});
-
+        String [] PlayersF = {"Laura", "Diego", "Valentina", "Alejandro", "Gabriela"};
+        Team teamF = new Team("Equipo F", PlayersF);
 
         String [] playersG = {"Juancito","Roman","Cordoba","Clemente","Diaz"};
         Team teamG = new Team("Equipo G", playersG);
@@ -27,50 +33,50 @@ public class Main {
         Team teamH = new Team("Equipo H", playersH);
 
        teamA.showMembers();
-      
        teamB.showMembers();
-  
-        //System.out.println(tomas.showTeam());
-        ArrayList<Team> equiposCuarto= new ArrayList<Team>();
-        equiposCuarto.add(teamA);
-        equiposCuarto.add(teamB);
-        equiposCuarto.add(teamC);
-        equiposCuarto.add(teamD);
-        equiposCuarto.add(teamE);
-        equiposCuarto.add(teamF);
-        equiposCuarto.add(teamG);
-        equiposCuarto.add(teamH);
+
+       Llave cuartosFinal = new Llave();
+
+       ArrayList<Team> equiposCuarto= new ArrayList<Team>();
+       equiposCuarto.add(teamA);
+       equiposCuarto.add(teamB);
+       equiposCuarto.add(teamC);
+       equiposCuarto.add(teamD);
+       equiposCuarto.add(teamE);
+       equiposCuarto.add(teamF);
+       equiposCuarto.add(teamG);
+       equiposCuarto.add(teamH);
 
 
-        ArrayList<Match> partidosCuarto = new ArrayList<Match>();
-        partidosCuarto.add(new Match(equiposCuarto.get(0), equiposCuarto.get(1)));
-        partidosCuarto.add(new Match(equiposCuarto.get(2), equiposCuarto.get(3)));
-        partidosCuarto.add(new Match(equiposCuarto.get(4), equiposCuarto.get(5)));
-        partidosCuarto.add(new Match(equiposCuarto.get(6), equiposCuarto.get(7)));
+       ArrayList<Team> getEquiposQueAvanzan= new ArrayList<Team>();
+       ArrayList<Match> partidosCuarto = new ArrayList<Match>();
+       partidosCuarto.add(new Match(equiposCuarto.get(0), equiposCuarto.get(1)));
+       partidosCuarto.add(new Match(equiposCuarto.get(2), equiposCuarto.get(3)));
+       partidosCuarto.add(new Match(equiposCuarto.get(4), equiposCuarto.get(5)));
+       partidosCuarto.add(new Match(equiposCuarto.get(6), equiposCuarto.get(7)));
 
 
-        //Rearrange games based on new Match structure (partidosCuartos)
 
-        //primerPartido.makeLocalGoal(1);
-        //primerPartido.makeVisitantGoal(2);
-        //primerPartido.makeVisitantGoal(3);
-        //System.out.println(primerPartido.getMatchStatus());
+        partidosCuarto.get(0).makeLocalGoal(1);
+        partidosCuarto.get(0).makeVisitantGoal(2);
+        partidosCuarto.get(0).makeVisitantGoal(3);
+        getWinner();
 
-        //segundoPartido.makeLocalGoal(0);
-        //System.out.println(segundoPartido.getMatchStatus());
+        partidosCuarto.get(1).makeLocalGoal(0);
+        System.out.println(partidosCuarto.get(1).getMatchStatus());
 
-        //tercerPartido.makeVisitantGoal(1);
-        //tercerPartido.makeVisitantGoal(2);
-        //tercerPartido.makeLocalGoal(0);
-        //tercerPartido.makeLocalGoal(3);
-        //tercerPartido.makeLocalGoal(2);
-        //System.out.println(tercerPartido.getMatchStatus());
+        partidosCuarto.get(2).makeVisitantGoal(1);
+        partidosCuarto.get(2).makeVisitantGoal(2);
+        partidosCuarto.get(2).makeLocalGoal(0);
+        partidosCuarto.get(2).makeLocalGoal(3);
+        partidosCuarto.get(2).makeLocalGoal(2);
+        System.out.println(partidosCuarto.get(2).getMatchStatus());
 
-        //cuartoPartido.makeLocalGoal(2);
-        //cuartoPartido.makeVisitantGoal(0);
-        //cuartoPartido.makeVisitantGoal(1);
-        //cuartoPartido.makeLocalGoal(3);
-        //System.out.println(cuartoPartido.getMatchStatus());
+        partidosCuarto.get(3).makeLocalGoal(2);
+        partidosCuarto.get(3).makeVisitantGoal(0);
+        partidosCuarto.get(3).makeVisitantGoal(1);
+        partidosCuarto.get(3).makeLocalGoal(3);
+        System.out.println(partidosCuarto.get(3).getMatchStatus());
 
     }
 

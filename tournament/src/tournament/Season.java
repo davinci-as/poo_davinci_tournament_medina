@@ -49,4 +49,8 @@ public class Season {
     public void setTeams(ArrayList<Team> teams) {
         this.teams = teams;
     }
+
+    public void addMatch(Match matches){
+        getMatches().add(matches);
+    }
 }

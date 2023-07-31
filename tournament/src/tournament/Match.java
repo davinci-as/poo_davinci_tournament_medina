@@ -88,5 +88,9 @@ public class Match {
             return getVisitantTeam().getName();
         }
     }
+
+    public void Match(Season season) {
+
+    }
 }
 
