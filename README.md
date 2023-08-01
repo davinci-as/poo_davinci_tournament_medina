@@ -12,7 +12,7 @@
 
 [-] Agregar los partidos a la llave cuartoFinal
 
-[ ] Pedir los equipos que avanzan a semis e imprimir equipos -> equiposSemi :: ArrayList<Team>
+[-] Pedir los equipos que avanzan a semis e imprimir equipos -> equiposSemi :: ArrayList<Team>
 
 [-] Crear equiposCuarto :: ArrayList<Team>, y agregarle los equipos (con add, en orden)
 

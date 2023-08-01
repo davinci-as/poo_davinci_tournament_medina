@@ -5,9 +5,9 @@ import java.util.Date;
 public class Match {
     private String location;
     private Date date;
-    private Team localTeam;
-    private Team visitantTeam;
-    private MatchResult result;
+    private static Team localTeam;
+    private static Team visitantTeam;
+    private static MatchResult result;
 
     public String getLocation() {
         return location;
@@ -25,7 +25,7 @@ public class Match {
         this.date = date;
     }
 
-    public Team getLocalTeam() {
+    public static Team getLocalTeam() {
         return localTeam;
     }
 
@@ -33,7 +33,7 @@ public class Match {
         this.localTeam = localTeam;
     }
 
-    public Team getVisitantTeam() {
+    public static Team getVisitantTeam() {
         return visitantTeam;
     }
 
@@ -41,7 +41,7 @@ public class Match {
         this.visitantTeam = visitantTeam;
     }
 
-    public MatchResult getMatchResult() {
+    public static MatchResult getMatchResult() {
         return result;
     }
 
@@ -79,13 +79,13 @@ public class Match {
         getMatchResult().setLocalGoalCounter(updated_LocalGoalCounter);
     }
 
-    public String getWinner() {
+    public static Team getWinner(Match match) {
         if (getMatchResult().localWin()) {
-            return getLocalTeam().getName();
+            return getLocalTeam();
         } else if (getMatchResult().tie()) {
-            return "Empate";
+            return null;
         } else {
-            return getVisitantTeam().getName();
+            return getVisitantTeam();
         }
     }
 

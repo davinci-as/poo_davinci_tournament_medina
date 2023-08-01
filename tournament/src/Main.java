@@ -48,37 +48,40 @@ public class Main {
        equiposCuarto.add(teamH);
 
 
-       ArrayList<Team> getEquiposQueAvanzan= new ArrayList<Team>();
+
        ArrayList<Match> partidosCuarto = new ArrayList<Match>();
        partidosCuarto.add(new Match(equiposCuarto.get(0), equiposCuarto.get(1)));
        partidosCuarto.add(new Match(equiposCuarto.get(2), equiposCuarto.get(3)));
        partidosCuarto.add(new Match(equiposCuarto.get(4), equiposCuarto.get(5)));
        partidosCuarto.add(new Match(equiposCuarto.get(6), equiposCuarto.get(7)));
 
+        ArrayList<Team> equiposSemi= new ArrayList<Team>();
 
 
         partidosCuarto.get(0).makeLocalGoal(1);
         partidosCuarto.get(0).makeVisitantGoal(2);
         partidosCuarto.get(0).makeVisitantGoal(3);
-        getWinner();
+        equiposSemi.add(Match.getWinner(partidosCuarto.get(0)));
 
         partidosCuarto.get(1).makeLocalGoal(0);
-        System.out.println(partidosCuarto.get(1).getMatchStatus());
+        equiposSemi.add(Match.getWinner(partidosCuarto.get(1)));
 
         partidosCuarto.get(2).makeVisitantGoal(1);
         partidosCuarto.get(2).makeVisitantGoal(2);
         partidosCuarto.get(2).makeLocalGoal(0);
         partidosCuarto.get(2).makeLocalGoal(3);
         partidosCuarto.get(2).makeLocalGoal(2);
-        System.out.println(partidosCuarto.get(2).getMatchStatus());
+        equiposSemi.add(Match.getWinner(partidosCuarto.get(2)));
 
         partidosCuarto.get(3).makeLocalGoal(2);
         partidosCuarto.get(3).makeVisitantGoal(0);
         partidosCuarto.get(3).makeVisitantGoal(1);
         partidosCuarto.get(3).makeLocalGoal(3);
-        System.out.println(partidosCuarto.get(3).getMatchStatus());
+        equiposSemi.add(Match.getWinner(partidosCuarto.get(3)));
+
+        for (Team team: equiposSemi) {
+            System.out.println(equiposSemi);
+        }
 
     }
-
-
 }
